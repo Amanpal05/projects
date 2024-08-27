@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://img.freepik.com/free-vector/flat-natural-background-with-landscape_23-2148250109.jpg?t=st=1723460684~exp=1723464284~hmac=3cff733fcf6f67391daf15c9b964aa4321f90ea04d5f73842265a98132e6c5ec&w=740);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lucida Sans Unicode';
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+    text-align: justify;
+}
+
+.page{
+    display: grid;
+    margin: auto;
+    width: 50rem;
+    background: transparent;
+    border: 0.2rem solid white;
+    padding:3rem 4rem ;
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem white;
+    backdrop-filter: blur(10px);
+    color:white;
+}
+
+ h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:'Georgia';
+    width: 100%;
+    overflow: hidden;
+    letter-spacing: 10px;
+    white-space:nowrap;
+    animation: typing 5s,
+                cursor .8s step-end infinite alternate;
+                
+}
+@keyframes cursor{
+    50%{border-color: transparent;}
+}
+@keyframes typing{
+    from{width:0}
+}
+
+.profile{
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    background: linear-gradient(180deg,Red, Orange, Yellow, rgb(2, 255, 2), rgb(88, 88, 255), rgb(142, 0, 244), Violet);
+    transition: all 0.3s;
+    display: grid;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    
+}
+.profile-card{
+    height: 140px;
+    width: 140px;
+    background-image: url(mypic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 0.3s;
+    margin: auto;
+}
+
+.profile:hover{
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);
+}
+
+.profile:hover .profile-card{
+    scale: 0.95;
+    border-radius: 50%;
+}
+
+.summary{
+    text-align: justify;
+    margin: 10px;
+}
+.summary h2{
+    text-align: start;
+    padding-left: 0px;
+    font-size: 25px;
+    width: 100%;
+    overflow: hidden;
+    letter-spacing: 10px;
+    white-space:nowrap;
+    animation: typing 5s,
+                cursor .8s step-end infinite alternate;
+                
+}
+@keyframes cursor{
+    50%{border-color: transparent;}
+}
+@keyframes typing{
+    from{width:0}
+}
+.summary p{
+    text-align: justify;
+    letter-spacing: 5px;
+    font-family:'Georgia';
+
+}
+
+.section-contain{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    text-align: start;
+    
+}
+
+section{
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid white;
+}
+.right-section{
+    font-weight: 600;
+    font-size: 20px;
+    text-wrap: nowrap;
+    text-align: start;
+}
+.left-section{
+    font-size: 19px;
+    text-wrap: nowrap;
+    text-align: justify;
+    margin-left: 70px;
+}
+.left-section p{
+    padding-top: 1.5px;
+
+}
+.divider{
+    height: 100%;
+    width: 2px;
+}
+
+
+
+
+
+
+
+
+
+

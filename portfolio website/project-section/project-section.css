@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:5px 5px 0px 5px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+   background-image: url(https://i.pinimg.com/564x/16/66/fd/1666fde83bb9e4c06dd10a6f30013251.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+section{
+    backdrop-filter: blur(10px);
+    background: transparent;
+    margin-bottom: 100px;
+}
+
+
+.first-project{
+    text-align: justify;
+
+}
+h1{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-style: oblique;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(255,100,255, 1),
+    0 0 20px rgba(255,100,255, 1),
+    0 0 40px rgb(255, 100, 255,1),
+    0 0 80px rgba(255,100,255, 1),
+    0 0 160px rgba(255,100,255, 1);
+
+}
+
+h2{
+    padding: 20px 0px 10px 0px;
+    display: list-item;
+    margin-left: 1em;
+    font-size: 25px;
+    font-style: oblique;
+    text-shadow: 0 0 10px rgba(255,100,255, 1),
+    0 0 20px rgba(255,100,255, 1),
+    0 0 40px rgb(255, 100, 255,1),
+    0 0 80px rgba(255,100,255, 1),
+    0 0 160px rgba(255,100,255, 1);
+
+}
+h3{
+    font-style: oblique;
+    text-shadow: 0 0 1px rgb(47, 255, 1),
+    0 0 2px rgb(47, 255, 1),
+    0 0 4px rgb(47, 255, 1),
+    0 0 8px rgb(47, 255, 1),
+    0 0 16px rgb(47, 255, 1);
+
+}
+
+p{
+    text-align: justify;
+    }
+
+.video,.video2,.video3,.video4,.video5,.video6{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-project{
+    text-align: justify;
+}
+
+.second-project h2{
+    padding: 20px 0px 10px 0px;
+    font-style: oblique;
+}

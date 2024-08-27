@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins';
+}
+body{
+    background-image: url(https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg?w=996&t=st=1723805944~exp=1723806544~hmac=7b2c5db07efa01dfe55d591cddaf539e4a1ccfb4f8eab5b94605acdedf947eb7);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.head::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00adff;
+    z-index: 1;
+    mix-blend-mode: color;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+ h1{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    font-size: 60px;
+    border-radius: 10px 50px 10px 50px;
+    filter: blur(0.5px);
+    overflow: hidden;
+    text-shadow: 0 0 10px rgba(225, 225, 225, 1),
+                 0 0 20px rgba(225, 225, 225, 1),
+                 0 0 40px rgba(225, 225, 225, 1),
+                 0 0 80px rgba(225, 225, 225, 1),
+                 0 0 160px rgba(225, 225, 225, 1);
+
+
+}
+.section-contain{
+    display: flex;
+    width: 40%;
+    height: 50vh;
+    margin-top: 12%;
+    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 500px  white;
+    border-radius: 10px 50px 10px 50px;
+    
+}
+
+section{
+    flex: 1;
+    text-align: left;
+    
+}
+.right-section{
+    font-weight: 600;
+    font-size: 40px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+.right-section p{
+    padding: 11px;
+    filter: blur(0.5px);
+    overflow: hidden;
+    text-shadow: 0 0 10px rgba(225, 225, 225, 1),
+                 0 0 20px rgba(225, 225, 225, 1),
+                 0 0 40px rgba(225, 225, 225, 1),
+                 0 0 80px rgba(225, 225, 225, 1),
+                 0 0 160px rgba(225, 225, 225, 1);
+    
+}
+.left-section{
+    font-size: 32px;
+    text-wrap: nowrap;
+    text-align: justify;
+}
+.left-section p{
+    padding: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
