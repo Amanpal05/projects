@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted playsinline class="back-video">
+            <source src="moving eye.mp4" type="video/mp4"> <!-- Background video -->
+        </video>
+    </div>
+
+    <div class="page">
+        <form>
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="text" placeholder="Username" id="email">
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-lock'></i>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#" target="_blank">Forget password?</a>
+            </div>
+            <button type="submit" onclick="next(event)">Login</button>
+            <div class="register">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function next(event){
+            event.preventDefault();    
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Login condition
+            if(email == 'adminlogin@gmail.com' && password == admin) {
+                window.location.assign("#");
+                alert("Login successful");
+            } else {
+                alert("Login failed");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

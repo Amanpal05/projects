@@ -1,0 +1,211 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.back-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.page{
+    width: 42rem;
+    background: rgba(0, 0, 0, 0.5); /* Added transparency */
+    border: 0.2rem solid rgb(255, 255, 255);
+    padding: 3rem 4rem;
+    border-radius: 4rem 14rem 4rem 14rem;
+    box-shadow: 0 0 2rem rgba(255,100,255, 1);
+    color: #fff;
+    z-index: 2; /* Ensures it stays above the video */
+    backdrop-filter: blur(10px);
+}
+
+.page h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(255,100,255, 1),
+    0 0 2px rgba(255,100,255, 1),
+    0 0 4px rgb(255, 100, 255,1),
+    0 0 8px rgba(255,100,255, 1),
+    0 0 16px rgba(255,100,255, 1);
+}
+
+.page .input-box{
+    width: 100%;
+    height: 5rem;
+    margin: 3rem 0;
+    text-shadow: 0 0 1px rgba(255,100,255, 1),
+    0 0 2px rgba(255,100,255, 1),
+    0 0 4px rgb(255, 100, 255,1),
+    0 0 8px rgba(255,100,255, 1),
+    0 0 16px rgba(255,100,255, 1);
+}
+
+.page .input-box input{
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 0.2rem solid #fff;
+    border-radius: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    padding: 2rem 4.5rem 2rem 2rem;
+    text-shadow: 0 0 10px rgba(255,100,255, 1),
+    0 0 20px rgba(255,100,255, 1),
+    0 0 40px rgb(255, 100, 255,1),
+    0 0 80px rgba(255,100,255, 1),
+    0 0 160px rgba(255,100,255, 1);
+}
+
+.input-box i{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+.page .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: -1.5rem 0 1.5rem;
+    text-shadow: 0 0 10px rgba(255,100,255, 1),
+    0 0 20px rgba(255,100,255, 1),
+    0 0 40px rgb(255, 100, 255,1),
+    0 0 80px rgba(255,100,255, 1),
+    0 0 160px rgba(255,100,255, 1);
+}
+
+.remember-forget label input {
+    accent-color: #fe0000;
+    margin-right: 0.3rem;
+}
+
+.remember-forget a{
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+.page button{
+    width: 50%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 4rem;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.5rem 1rem white;
+    background: transparent;
+    color: white;
+    text-shadow: 0 0 10px rgba(255,100,255, 1),
+    0 0 20px rgba(255,100,255, 1),
+    0 0 40px rgb(255, 100, 255,1),
+    0 0 80px rgba(255,100,255, 1),
+    0 0 160px rgba(255,100,255, 1);
+  
+}
+
+button:active{
+    transform: translateY(0.2rem);
+}
+button:hover{
+    background-color: rgba(255,100,255,);
+    color: #000;
+    text-shadow: 0 0 10px rgb(255, 0, 0,1),
+    0 0 20px rgba(255,0,0, 1),
+    0 0 40px rgb(255, 0, 0,1),
+    0 0 80px rgba(255,0,0, 1),
+    0 0 160px rgba(255,0,0, 1);
+}
+
+.register p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(255,100,255, 1),
+    0 0 20px rgba(255,100,255, 1),
+    0 0 40px rgb(255, 100, 255,1),
+    0 0 80px rgba(255,100,255, 1),
+    0 0 160px rgba(255,100,255, 1);
+}
+
+.register a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0 0 1px rgb(255, 0, 0,1),
+    0 0 2px rgba(255,0,0, 1),
+    0 0 4px rgb(255, 0, 0,1),
+    0 0 8px rgba(255,0,0, 1),
+    0 0 16px rgba(255,0,0, 1);
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+}
